@@ -1,0 +1,42 @@
+[node]
+
+node : usefull form running code outside a browser
+
+Comparison:    browser             -               Node.js
+                DOM                                 No DOM
+                Window                              No window
+                Interactive  Apps                   Server Side Apps
+                No Filesystem                       Filesystem
+                Fragmentation                       Versions
+                ES6 Modules                         CommonJS
+
+LTS : Long Term Support
+
+>node <filename> : run a .js file
+
+GLOBALS : varibles usable anywhere in the Filesystem
+__dirname - path to current directory
+__filename  - file name
+require - function to use modules (CommonJS)
+module -  info about current module (file)
+perocess  - info about env where the progrma is being executed
+
+-*-modules-*-
+CommonJS, every file is module(by difault)
+modules - encapsulated code(only share minimum needed)
+
+-*-*-build-in modules-*-*-
+-OS
+-PATH
+-FS
+-HTTP
+
+[npm]
+npm - global command, comes with node
+>npm install <packagename> - install local package usefull int a particular project
+>npm install -g <packagename> - unstall global package usefull in any project
+
+package.json - manifest file(stores important info about project/package)
+manual approch (create package.json in the root, create properties etc)
+npm init (step by step, press enter to skip)
+nmp init -y (everything default)
